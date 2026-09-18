@@ -266,18 +266,19 @@ export function Footer() {
           </a>
           {t("nonprofit")}
           {` ${t("commit", { sha })}`}
-          {t("openSourceAt")}{" "}
-          <a
+                    {t("openSourceAt")}{" "}
+          
             href="https://github.com/hackclub/site"
             target="_blank"
             rel="noopener noreferrer"
             style={u}
           >
             hackclub/site
-          </a>
-          <link href="admin">
-          Contact an admin for further assistance
-          </link>
+          </a>{" "}
+          <Link href="/admin" style={u}>
+            Contact an admin for further assistance
+          </Link>
+        </p>
         </p>
         <ThemeToggle variant="footer" />
       </div>
