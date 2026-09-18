@@ -9,6 +9,7 @@ import { routing, getLocaleDomain } from "@/i18n/routing";
 import { phantomSans, zarathustra, cormorant, geologica } from "../fonts";
 import { themesrc } from "../theme-script";
 import "../globals.css";
+import { EggProvider } from "@/components/EggProvider";
 
 type Props = {
   children: React.ReactNode;
@@ -63,12 +64,14 @@ export default async function LocaleLayout({ children, params }: Props) {
         <link rel="shortcut icon" href="/favicon.png" />
       </head>
       <body className="min-h-full">
+        <EggProvider>
         <NextIntlClientProvider messages={messages}>
           <PlausibleProvider src="https://plausible.io/js/pa-Fxh-6GHJlpUS4AXISXi-C.js">
             <SkipToMainLink />
             {children}
           </PlausibleProvider>
         </NextIntlClientProvider>
+        </EggProvider> 
         <SpeedInsights />
       </body>
     </html>
