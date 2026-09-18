@@ -267,7 +267,7 @@ export function Footer() {
           {t("nonprofit")}
           {` ${t("commit", { sha })}`}
                     {t("openSourceAt")}{" "}
-          
+          <a
             href="https://github.com/hackclub/site"
             target="_blank"
             rel="noopener noreferrer"
