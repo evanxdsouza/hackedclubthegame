@@ -279,7 +279,6 @@ export function Footer() {
             Contact an admin for further assistance
           </Link>
         </p>
-        </p>
         <ThemeToggle variant="footer" />
       </div>
 
