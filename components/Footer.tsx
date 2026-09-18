@@ -275,6 +275,9 @@ export function Footer() {
           >
             hackclub/site
           </a>
+          <link href="admin">
+          Contact an admin for further assistance
+          </link>
         </p>
         <ThemeToggle variant="footer" />
       </div>

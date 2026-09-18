@@ -7,7 +7,7 @@ const STORAGE_KEY = "directive-progress";
 type EggContextType = {
     found : Set<string>;
     foundEgg: (id: string) => void;
-    hasFound: (id: string) => boolean:
+    hasFound: (id: string) => boolean;
 };
 
 const EggContext = createContext<EggContextType | null>(null);
