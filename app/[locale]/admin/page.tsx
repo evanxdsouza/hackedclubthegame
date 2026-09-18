@@ -29,7 +29,7 @@ export default function AdminPage() {
     return (
         <main>
             <Navbar />
-            <div style={{ padding: "120px 20px", textAlign: "centre", maxWidth: 480, margin:"0 auto"}}>
+            <div style={{ padding: "120px 20px", textAlign: "center", maxWidth: 480, margin:"0 auto"}}>
                 <form onSubmit={handleSubmit}>
                     <p>Restricted access. Enter credentials.</p>
                     <input
